@@ -19,12 +19,6 @@ module.exports = merge(
             open: true,
             https: false,
             allowedHosts: "all",
-            static: {
-                directory: './dist',
-                staticOptions: {},
-                serveIndex: true,
-                watch: true,
-            },
             client: {
                 overlay: true,
             },

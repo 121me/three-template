@@ -11,6 +11,9 @@ module.exports = {
         path: path.resolve(__dirname, '../dist')
     },
     devtool: 'source-map',
+    experiments: {
+        topLevelAwait: true
+    },
     plugins:
     [
         new CopyWebpackPlugin({
@@ -56,7 +59,7 @@ module.exports = {
 
             // Images
             {
-                test: /\.(jpg|png|gif|svg)$/,
+                test: /\.(jpg|png|gif|svg|jpeg)$/,
                 use:
                 [
                     {
